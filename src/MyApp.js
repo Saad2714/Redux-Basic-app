@@ -6,13 +6,13 @@ class MyApp extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
+        <View style={{ flexDirection: "column", justifyContent: "space-around" }}>
           <TouchableOpacity onPress={() => this.props.incCounter()}>
-            <Text>INCREASE</Text>
+            <Text style={{ fontSize: 25, color:"#43BE31" }}>INCREASE</Text>
           </TouchableOpacity>
           <Text style={{ fontSize: 30 }}>{this.props.myCounter}</Text>
           <TouchableOpacity onPress={() => this.props.decCounter()}>
-            <Text>DECREASE</Text>
+            <Text style={{ fontSize: 25, color: "#E44236" }}>DECREASE</Text>
           </TouchableOpacity>
         </View>
       </View>
